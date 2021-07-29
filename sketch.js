@@ -39,6 +39,8 @@ function setup() {
   bow.scale = 1;
   
    score = 0    
+
+  
 }
 
 function draw() {
@@ -109,8 +111,11 @@ function draw() {
   arrow.velocityX = -4;
   arrow.lifetime = 100;
   arrow.scale = 0.3;
-
+  
   arrowGroup.add(arrow);
+
+  arrow.debug=true
+  arrow.setCollider("rectangle",0,0,150,50);
 }
 
 function redBalloon() {
